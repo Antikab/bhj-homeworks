@@ -13,15 +13,18 @@ for (let i = 1; i < 10; i++) {
 		if (dead.textContent === '10') {
 			setTimeout(() => {
 				alert('Победа!');
-				dead.textContent = 0;
-				lost.textContent = 0;
+				gameFinish();
 			})
 		} else if (lost.textContent === '5') {
 			setTimeout(() => {
 				alert('Вы проиграли, попробуйте ещё!');
-				dead.textContent = 0;
-				lost.textContent = 0;
+				gameFinish();
 			})
 		}
 	}
+}
+
+function gameFinish() {
+	dead.textContent = 0;
+	lost.textContent = 0;
 }
