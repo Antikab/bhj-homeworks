@@ -1,13 +1,3 @@
-/*<a href="//google.com">google</a>*/
-
-// document.getElementsByTagName('a')[0].onclick = function () {
-// 	return false;
-// }
-
-
-
-
-
 const menuLink = Array.from(document.querySelectorAll('.menu__link'));
 const menuList = Array.from(document.querySelectorAll('.menu'))
 
@@ -26,4 +16,3 @@ menuLink.forEach((element) => {
 		};
 	};
 })
-
